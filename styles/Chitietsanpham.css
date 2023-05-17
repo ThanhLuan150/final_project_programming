@@ -1,0 +1,217 @@
+.detail1{
+    padding-top: 24px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.img1{
+    Width:396.67px;
+    Height:550px;
+    border-radius: 10px;
+}
+.category ul{
+    display:flex;
+    gap:10px;
+}
+.category ul li {
+    list-style-type: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+}
+.categorya{
+    color: #777777;
+}
+
+.categoryp1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 41px;
+    color: #333333;
+}
+.categoryp2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #DD3333;
+}
+.list ul{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #0000FF;
+}
+.addressp1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    color: #000000;
+}
+.address ul{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: #000000;
+}
+.functionbutton{
+    Width:118px;
+    Height:27px;
+    background: #F2DFE3;
+    border-radius: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #DD3333;
+    border: 1px solid #F2DFE3;
+}
+.functionbutton1{
+    color:#DD3333;
+}
+.noiquyp1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    color: #FF0000;
+}
+.noiquyp2 ul{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    color: #000000;
+}
+.noidungp3{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1p7x;
+    line-height: 20px;
+    color: #0000FF;
+}
+.noidung4{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FF0000;
+}
+.noiquyp1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    color: #FF0000;
+}
+.noiquy2 ul{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+.background{
+    background: #EFEFEF;
+    padding-bottom: 30px;
+    }
+    .backgroundp1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #000000;
+    }
+    .listproductssp1{
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 27px;
+
+      color: #000000;
+
+    }
+
+    .title{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        }
+
+    .list_schools{
+            display: grid ;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap:30px;
+            list-style-type:none;
+    }
+    .item{
+        background: #fff;
+        border-radius: 10px 10px 10px 10px;
+    }
+    .img4{
+        Width:262px;
+        Height:290px;
+        border-radius: 10px 10px 0 0 ;
+    }
+    .informationproductp1{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+        margin-left: 13px;
+    }
+    .informationproductp2{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #ED2353;
+        margin-left: 13px;
+    }
+    .button111{
+        margin-bottom:20px;
+        margin-left: 13px;
+    }
+    .bt2{
+        background: #F2DFE3;
+        border-radius: 20px;
+        border: 1px solid  #F2DFE3 ;
+        height:30px;
+        width: 100px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+       
+    }
+    .a1{
+        color: #000000;
+    }

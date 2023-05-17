@@ -1,0 +1,60 @@
+img {
+    Width:400px;
+Height:290px;
+border-radius: 10px 10px 0 0 ;;
+}
+
+.list_blogs{
+    display: grid ;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap:30px;
+    list-style-type:none;
+    margin-left:10%;
+}
+.item{
+background: #fff;
+border-radius: 10px 10px 10px ;
+}
+.cardname{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+text-align:center;
+line-height: 19px;
+color: #000000;
+margin-left: 13px;
+}
+.description{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: #ED2353;
+margin-left: 13px;
+}
+.background{
+background: #EFEFEF;
+padding-bottom: 30px;
+width:80%;
+}
+.backgroundp1{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+
+color: #000000;
+}
+#btn{
+margin-left:40%;
+padding-right: 10px;
+padding-left: 10px;
+background-color:red;
+border:none;
+font-size: 100%;
+text-align: center;
+color: #fff;
+line-height: 25px;
+}

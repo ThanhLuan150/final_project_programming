@@ -1,0 +1,21 @@
+.footer{
+    width: 100%;
+    background: #F2DFE3;
+    height: 400px;
+}
+.content{
+    display:grid;
+    grid-template-columns: 40% 30% 30%;
+    padding-top: 72px;
+    padding-left: 140px;
+    padding-bottom:53px ;
+    padding-right: 52px;
+}
+.content1{ 
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 17px;
+    color: #333333;
+}

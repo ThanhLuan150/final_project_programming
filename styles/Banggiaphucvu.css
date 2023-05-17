@@ -1,0 +1,223 @@
+
+.phucvu{
+    width: 100%;
+    background: url("https://aodaitailoc.com/wp-content/uploads/2020/12/bg-shoppage.jpg");
+    height: 250px;
+}
+.title{
+    padding-top: 67px;
+}
+.titlep1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 53px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+.titlep2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #777777;
+    text-align: center;
+}
+.a1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #777777;
+}
+.noidung{
+    background: #EFEFEF;
+}
+.noiquy{
+    padding-top:30px;
+}
+.gioithieu1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 19px;
+    color: #000000;
+}
+.gioithieu2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 31px;
+    color: #DD3333;
+}
+.chothue1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 19px;
+    color: #000000;
+
+}
+.giathue{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    color: #000000;
+}
+.bangia{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #242424;
+}
+.noidungbangia{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+.gioithieu3{
+    font-family:'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #242424;
+}
+.gioithieu4{ 
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #0000FF;
+}
+.gioithieu6{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+.background{
+    background: #EFEFEF;
+    padding-bottom: 30px;
+    }
+
+    .title{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        }
+
+    .list_schools{
+            display: grid ;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap:30px;
+            list-style-type:none;
+    }
+    .item{
+        background: #fff;
+        border-radius: 10px 10px 10px 10px;
+    }
+    .img4{
+        Width:262px;
+        Height:290px;
+        border-radius: 10px 10px 0 0 ;
+    }
+    .informationproductp1{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+        margin-left: 13px;
+    }
+    .informationproductp2{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #ED2353;
+        margin-left: 13px;
+    }
+    .button111{
+        margin-bottom:20px;
+        margin-left: 13px;
+    }
+    .bt2{
+        background: #F2DFE3;
+        border-radius: 20px;
+        border: 1px solid  #F2DFE3 ;
+        height:30px;
+        width: 100px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+       
+    }
+    .a1{
+        color: #000000;
+    }
+    .bt6{
+        background: #ED2353;
+        border-radius: 20px;
+        Width:230px;
+        Height:42px;
+        color:#fff;
+        border: 1px solid  #ED2353;
+        margin-left: 450px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+    }
+    .gioithieu3{
+    font-family:'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #242424;
+}
+.gioithieu4{ 
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #0000FF;
+}
+.gioithieu6{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
