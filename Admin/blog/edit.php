@@ -44,6 +44,10 @@ header("location: blog.php");
                 <label for="image"></label>image<input type="text" id="image" class="form-control" name="image" value="<?= $row['image'] ?>"></div>
             <div class="form-group">
                 <label for="description"></label>description<input type="text" id="description" class="form-control" name="description" value="<?= $row['description'] ?>"></div>
+                <div class="form-group">
+                <label for="description"></label>description<input type="text" id="description" class="form-control" name="description" value="<?= $row['description'] ?>"></div>
+                <div class="form-group">
+                <label for="description"></label>description<input type="text" id="description" class="form-control" name="description" value="<?= $row['description'] ?>"></div>
                 <button class="btn btn-success" name="sbm">Edit blog</button>
         </form>
 </body>
