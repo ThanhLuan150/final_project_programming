@@ -14,7 +14,7 @@
   border-radius: 50%;
 }
 body{
-  background-color: #FFC0CB;
+  background-color: #B0E0E6;
 }
 table{
   width: 100%;
@@ -77,7 +77,7 @@ h2{
     </button>
         </div>
         <form action="search.php" method="get" class="form-inline">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search by Id_categories" aria-label="Search" name="search">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
         <div class="card-body">
