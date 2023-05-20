@@ -118,6 +118,7 @@ h2{
       <ul class="sub-menu">
         <li><a class="nav"href="./content/content.php">Content</a></li>
         <li><a class="nav"href="./cccd/cccd.php">CCCD</a></li>
+        <li><a class="nav"href="./user/user.php">User</a></li>
       </ul>
     </li>
   </ul>
@@ -128,7 +129,7 @@ h2{
     </button>
         </div>
         <form action="search.php" method="get" class="form-inline">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search by ID" aria-label="Search" name="search">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search by name_categories" aria-label="Search" name="search">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
 
