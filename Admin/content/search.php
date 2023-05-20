@@ -15,8 +15,10 @@
 require_once '../connect.php';
 
 if(isset($_GET['search']) && !empty($_GET['search'])){
-  $search_id = $_GET['search'];
-  $search_sql = "SELECT * FROM contents WHERE id_contents = $search_id";
+  $search = $_GET['search'];
+  $search_sql = "SELECT * FROM categories
+  INNER JOIN contents ON contents.id_categories = categories.id_categories
+  WHERE categories.name_categories = '$search'";
   $result = mysqli_query($conn, $search_sql);
 
   if(mysqli_num_rows($result) > 0){

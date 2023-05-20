@@ -76,7 +76,7 @@ h2{
     </button>
         </div>
         <form action="search.php" method="get" class="form-inline">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search by id_Lienhe" aria-label="Search" name="search">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search by nameuser" aria-label="Search" name="search">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
         <div class="card-body">

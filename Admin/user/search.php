@@ -16,7 +16,7 @@ require_once '../connect.php';
 
 if(isset($_GET['search']) && !empty($_GET['search'])){
   $search = $_GET['search'];
-  $search_sql = "SELECT * FROM categories WHERE name_categories = '$search'";
+  $search_sql = "SELECT * FROM users WHERE username = '$search'";
   $result = mysqli_query($conn, $search_sql);
 
   if(mysqli_num_rows($result) > 0){
@@ -24,37 +24,30 @@ if(isset($_GET['search']) && !empty($_GET['search'])){
     // display search result
     echo "<table class='table'>
             <thead class='thead-dark'>
-                <tr>
-                    <th>id_categories</th>
-                    <th>name_categories</th>
-                    <th>rent_prices</th>
-                    <th>created_at</th>
-                    <th>updated_at</th>
-                    <th>function</th> 
-                </tr>
+            <tr>
+            <th>ID</th>
+            <th>Username</th>
+            <th>password</th>
+            <th>confirm_password</th>
+            <th>email</th>
+        </tr>
             </thead>
             <tbody>
-            <tr>
-            <td>".$row['id_categories']."</td>
-            <td>".$row['name_categories']."</td>
-            <td> ".$row['rent_prices']." </td>
-            <td> ".$row['created_at']."</td>
-          
-            <td>".$row['updated_at']."</td>  
-            <td>
-                  <a href='edit.php?id=".$row['id_categories']."' class='btn btn-success'>sửa</a>
-                  <a onclick='return confirm(\"bạn có muốn xóa categories này không\");' href='delete.php?id=".$row['id_categories']."' class='btn btn-danger'>xóa</a>
-                </td>
-        </tr> 
-              </tr>
+              <tr>
+                <td>".$row['id_users']."</td>
+                <td>".$row['username']."</td>
+                <td>".$row['password']."</td>
+                <td>".$row['confirm_password']."</td>
+                <td>".$row['email']."</td>
             </tbody>
           </table>";
   } else {
     echo "<p>No results found</p>";
   }
 } else {
-  echo "<p>Please enter an id to search</p>";
+  echo "<p>Please enter an name to search</p>";
 }
 ?> 
 </body>
 </html>
+

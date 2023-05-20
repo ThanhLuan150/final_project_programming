@@ -16,10 +16,10 @@
 require_once 'connect.php';
 
 if(isset($_GET['search']) && !empty($_GET['search'])){
-  $search_id = $_GET['search'];
+  $search = $_GET['search'];
   $search_sql = "SELECT * FROM categories
                   INNER JOIN clothes ON clothes.id_categories = categories.id_categories
-                  WHERE categories.id_categories = $search_id";
+                  WHERE categories.name_categories = '$search'";
   $result = mysqli_query($conn, $search_sql);
 
   if(mysqli_num_rows($result) > 0){

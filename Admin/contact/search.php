@@ -16,7 +16,7 @@ require_once '../connect.php';
 
 if(isset($_GET['search']) && !empty($_GET['search'])){
   $search_id = $_GET['search'];
-  $search_sql = "SELECT * FROM lienhe WHERE id_lienhe = $search_id";
+  $search_sql = "SELECT * FROM lienhe WHERE nameuser = '$search_id'";
   $result = mysqli_query($conn, $search_sql);
 
   if(mysqli_num_rows($result) > 0){
