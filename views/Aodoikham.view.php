@@ -27,7 +27,7 @@
 </head>
 
 <body>
-    <?php include('header.php') ?>
+    <?php include('header.view.php') ?>
     <div class="phucvu">
         <div class="container">
             <div class="title">
@@ -62,7 +62,7 @@
             <div class="noiquy">
                 <div class="gioithieu">
                     <p class="gioithieu1">Áo đối khẩm là trang phục không thể thiếu trong cung đình thời sưai. Đó là nét văn hóa đặc trưng đẹp đẽ của mảnh đất hình chữ S chúng ta. Tuy nhiên, để lựa chọn một địa chỉ cho thuê áo cổ phục giá rẻ- chất lượng – uy tín, thì không phải chuyện dễ dàng. Ngoài ra, còn nhiều vấn đề liên quan đến dịch vụ cho thuê cổ phục. Tất cả sẽ được Áo Cổ phục TTDVL chia sẻ tại đây.</p>
-                    <p class="gioithieu2">Áo Đối Khâm– Gam màu phụ giúp cho bộ ảnh của bạn thêm phần ấn tượng</p>
+                    <p class="gioithieu2">Áo Đối Khâm – Gam màu phụ giúp cho bộ ảnh của bạn thêm phần ấn tượng</p>
                 </div>
                 <div class="chothue">
                     <p class="chothue1">Giữa hàng trăm ngàn mẫu áo cổ phục quả nữ và nam, áo cổ phục nam nữ phong phú trên thị trường hiện nay. Làm sao để chọn được nhũng mẫu cổ phục đẹp , xinh lung linh, phù hợp nhất cho buổi chụp hình , sống ảo của mọi người. Điều này cũng khiens nhiều người phải rất đăng đó suy nghĩ thử chọn sau cho phù hợp .</p>
@@ -88,16 +88,14 @@
             <div class="container">
                 <br>
                 <?php
-                include('../connect/connect.dp.php');
+                include('../Models/allitems.model.php');
+                $rows = aodoikham();
 
-                $sql = "SELECT*FROM categories inner join clothes on clothes.id_categories= .categories.id_categories and id_clothes between 9 and 12 ORDER BY RAND();";
-                // câu truy vấn này dùng để
-                $result = $conn->query($sql);
-                if ($result->num_rows > 0) {
+                if (is_array($rows) && count($rows) > 0) {
                     // output data of each row
                 ?>
                     <div class="list_schools">
-                        <?php while ($row = $result->fetch_assoc()) { ?>
+                        <?php foreach ($rows as $row) { ?>
                             <div class="item">
                                 <div class="image11">
                                     <img class="img4" src="<?php echo $row["image"]; ?>" alt="">
@@ -141,20 +139,19 @@
             <br>
             <div class="xemthem">
                 <div class="container">
-                    <p class=xemthemp>Xem thêm về những mẫu áo khác</p>
+                    <p class=xemthemp>Xem thêm về mẫu áo khác</p>
                 </div>
                 <div class="background">
                     <div class="container">
                         <br>
                         <?php
-                        include('../connect/connect.dp.php');
-                        $sql = "SELECT * FROM categories inner join clothes on clothes.id_categories= .categories.id_categories and id_clothes ORDER BY RAND() ";
-                        $result = $conn->query($sql);
-                        if ($result->num_rows > 0) {
+                        include ('../Models/itemsrandom.model.php');
+                        $rows = allitemsrandom();
+                        if (is_array($rows) && count($rows) > 0) {
                             // output data of each row
                         ?>
                             <div class="list_schools">
-                                <?php while ($row = $result->fetch_assoc()) { ?>
+                                <?php foreach ($rows as $row) { ?>
                                     <div class="item">
                                         <div class="image11">
                                             <img class="img4" src="<?php echo $row["image"]; ?>" alt="">
@@ -175,15 +172,15 @@
                             } else {
                                 echo "Không có kết quả để hiển thị ra";
                             }
-                            $conn->close();
                             ?>
                             </div>
                             <br>
+                            <button class="bt6"> Xem thêm mẫu áo đối khâm <i style="color:black" class="fa-sharp fa-solid fa-cart-shopping"></i></button>
                     </div>
                 </div>
             </div>
         </div>
-        <?php include('footer.php') ?>
+        <?php include('footer.view.php') ?>
 </body>
 
 </html>

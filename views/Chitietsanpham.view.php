@@ -22,7 +22,7 @@
 </head>
 
 <body>
-  <?php include('./header.php') ?>
+  <?php include('./header.view.php') ?>
   <div class="body">
     <div class="container">
 
@@ -120,14 +120,11 @@
     </div>
   </div>
   <div class="background">
-    <br>
     <div class="container">
-      <p class="listproductssp1">SẢN PHẨM GỢI Ý</p>
-      <br> <br>
+      <br>
       <?php
-      include ('../Models/allitems.model.php');
-      // Hiển thị danh sách các danh mục trong dropdown list
-      $rows = randomitems();
+      include('../Models/itemsrandom.model.php');
+      $rows = allitemsrandom();
       if (is_array($rows) && count($rows) > 0) {
         // output data of each row
       ?>
@@ -143,9 +140,9 @@
                 <p class="informationproductp2"><?php echo $row["rent_prices"]; ?></p>
                 <p class="informationproductp2"><?php echo $row["sex"]; ?></p>
                 <div class="button111">
-                  <button class="bt2"><a class="a1" href="Chitietsanpham.view.php?id=<?php echo $row["id_clothes"]; ?>">Details</a></button>
-                  <button class="bt2"><a class="a1" href="orders.php?id=<?php echo $row["id_clothes"]; ?>">Đặt thuê</a></button>
-                  <a href="orders.php?id=<?php echo $row["id_clothes"]; ?>"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+                  <button class="bt2"><a class="a1" href="Chitietsanpham.view.php">Details</a></button>
+                  <button class="bt2"><a class="a1" href="../controllers/cart.controller.php?id=<?php echo $row["id_clothes"]; ?>">Đặt thuê</a></button>
+                  <a href="../controllers/cart.controller.php?id=<?php echo $row["id_clothes"]; ?>"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
                 </div>
               </div>
             </div>
@@ -155,6 +152,8 @@
         }
         ?>
         </div>
+        <br>
+        <button class="bt6"> Xem thêm mẫu áo đối khâm <i style="color:black" class="fa-sharp fa-solid fa-cart-shopping"></i></button>
     </div>
   </div>
   </div>
@@ -162,7 +161,7 @@
   </div>
   </div>
   </div>
-  <?php include('./footer.php') ?>
+  <?php include('./footer.view.php') ?>
 </body>
 
 </html>

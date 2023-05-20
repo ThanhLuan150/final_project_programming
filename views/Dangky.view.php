@@ -75,7 +75,7 @@ mysqli_close($conn);
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-<?php  include('header.php')?>
+<?php  include('header.view.php')?>
 <div class="background">
     <div class="container">
         <div class="dangky">
@@ -110,7 +110,8 @@ mysqli_close($conn);
         </div>
     </div>
 </div>
-<?php include('footer.php') ?>
+<?php include('footer.view.php') ?>
+
 </body>
 
 </html>

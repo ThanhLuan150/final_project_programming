@@ -23,7 +23,7 @@
 <body>
 
     <?php
-    include '../views/header.php';
+    include 'header.view.php';
     ?>
     <div class="background">
         <div class="container">
@@ -72,7 +72,7 @@
         </div>
     </div>
     <?php
-    require "../views/footer.php"
+    require "footer.view.php"
     ?>
 </body>
 

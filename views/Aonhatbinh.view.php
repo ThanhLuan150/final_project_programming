@@ -27,11 +27,11 @@
 </head>
 
 <body>
-    <?php include('header.php') ?>
+    <?php include('header.view.php') ?>
     <div class="phucvu">
         <div class="container">
             <div class="title">
-                <p class="titlep1"><i class="fa-solid fa-arrow-left" onclick="javascript:history.go(-1);"></i> ÁO ĐỐI KHÂM</p>
+                <p class="titlep1"><i class="fa-solid fa-arrow-left" onclick="javascript:history.go(-1);"></i> ÁO NHẬT BÌNH</p>
                 <div class="listmenu">
                     <div class="listmenu1">
                         <a href="Aodoikham.view.php" class="listmenu1p1">ÁO ĐỐI KHÂM</a>
@@ -88,14 +88,14 @@
             <div class="container">
                 <br>
                 <?php
-                include('../connect/connect.dp.php');
-                $sql = "SELECT*FROM categories inner join clothes on clothes.id_categories= .categories.id_categories and id_clothes between 40 and 60 ;";
-                $result = $conn->query($sql);
-                if ($result->num_rows > 0) {
+                include_once('../Models/allitems.model.php');
+                $rows= aonhatbinh();
+                
+                if (is_array($rows) && count($rows) > 0) {
                     // output data of each row
                 ?>
                     <div class="list_schools">
-                        <?php while ($row = $result->fetch_assoc()) { ?>
+                        <?php foreach($rows as $row){ ?>
                             <div class="item">
                                 <div class="image11">
                                     <img class="img4" src="<?php echo $row["image"]; ?>" alt="">
@@ -145,14 +145,13 @@
                     <div class="container">
                         <br>
                         <?php
-                        include('../connect/connect.dp.php');
-                        $sql = "SELECT * FROM categories inner join clothes on clothes.id_categories= .categories.id_categories and id_clothes   ORDER BY RAND() ";
-                        $result = $conn->query($sql);
-                        if ($result->num_rows > 0) {
+                        include ('../Models/itemsrandom.model.php');
+                        $rows = allitemsrandom();
+                        if (is_array($rows) && count($rows) > 0) {
                             // output data of each row
                         ?>
                             <div class="list_schools">
-                                <?php while ($row = $result->fetch_assoc()) { ?>
+                                <?php foreach ($rows as $row) { ?>
                                     <div class="item">
                                         <div class="image11">
                                             <img class="img4" src="<?php echo $row["image"]; ?>" alt="">
@@ -173,16 +172,16 @@
                             } else {
                                 echo "Không có kết quả để hiển thị ra";
                             }
-                            $conn->close();
                             ?>
                             </div>
                             <br>
+                            <button class="bt6"> Xem thêm mẫu áo đối khâm <i style="color:black" class="fa-sharp fa-solid fa-cart-shopping"></i></button>
                     </div>
                 </div>
             </div>
         </div>
         <?php
-        include('footer.php')
+        include('footer.view.php')
         ?>
 </body>
 

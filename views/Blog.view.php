@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <?php include('header.php') ?>
+    <?php include('header.view.php') ?>
     <section class="background" id="trainers">
         <div class="container">
             <br>
@@ -58,7 +58,7 @@
 
     </section>
     <?php
-    include('footer.php') ?>
+    include('footer.view.php') ?>
 </body>
 
 </html>

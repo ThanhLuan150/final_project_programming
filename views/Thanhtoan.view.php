@@ -2,7 +2,7 @@
 if (!isset($_SESSION)) {
   session_start();
 }
-include '../views/header.php';
+include '../views/header.view.php';
 
 // $cart = (isset($_SESSION['cart'])) ? $_SESSION['cart'] : [];
 
@@ -120,4 +120,4 @@ include '../views/header.php';
 
 <!--  -->
 
-<?php include '../views/footer.php' ?>;
+<?php include '../views/footer.view.php' ?>;

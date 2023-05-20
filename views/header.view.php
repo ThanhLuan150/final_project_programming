@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../Reponsive/Reponsiveheader.css">
     <link rel="stylesheet" href="/bootstrap-5.2.2-dist/css/bootstrap.min.css">
     <script src="/bootstrap-5.2.2-dist/js/jquery.min.js"></script>
     <script src="/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
@@ -25,12 +26,21 @@
 </head>
 
 <body>
+<script>
+    var menuToggle = document.getElementById('menu-toggle');
+    var menu = document.getElementById('menu');
+
+    menuToggle.addEventListener('click', function() {
+      menu.classList.toggle('show');
+    });
+  </script>
     <?php
     if (!isset($_SESSION)) {
         session_start();
     }
     ?>
     <div class="header">
+        
         <div class="image">
             <a href="../views/Home.view.php"><img class="img" src="../img/logo.jpg" alt=""></a>
         </div>

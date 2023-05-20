@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<?php session_start() ?>
 <html lang="en">
 
 <head>
@@ -21,7 +21,8 @@
     <link rel="stylesheet" href="../styles/Themgiohang.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
 </head>
-<?php include './header.php' ?>
+<?php include('header.view.php');
+?>
 
 <body>
     <div class="body">
@@ -195,7 +196,7 @@
         </div>
 
         <?php
-        include('./footer.php')
+        include('./footer.view.php')
         ?>
 </body>
 

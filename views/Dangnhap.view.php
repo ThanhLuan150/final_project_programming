@@ -70,7 +70,7 @@ mysqli_close($conn);
 </head>
 
 <body>
-    <?php include('header.php') ?>
+    <?php include('header.view.php') ?>
     <div class="background">
         <div class="container">
             <div class="dangky">
@@ -99,7 +99,7 @@ mysqli_close($conn);
             </div>
         </div>
     </div>
-    <?php include('footer.php') ?>
+    <?php include('footer.view.php') ?>
 </body>
 
 </html>

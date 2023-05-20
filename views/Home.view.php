@@ -23,7 +23,7 @@
 
 <body>
     <?php
-    include '../views/header.php';
+    include('header.view.php');
     if (isset($_SESSION["order_success"]) && $_SESSION["order_success"] === true) {
         echo '    <script>
         Swal.fire(
@@ -143,7 +143,7 @@ function currentSlide(n) {
             </form>
             <br> <br>
             <?php
-            include_once('../Models/allitems.model.php');
+            include('../Models/allitems.model.php');
             // Hiển thị danh sách các danh mục trong dropdown list
             $rows = allitems();
             if (is_array($rows) && count($rows) > 0) {
@@ -177,7 +177,7 @@ function currentSlide(n) {
     </div>
     </div>
     <?php
-    include '../views/footer.php';
+    include 'footer.view.php';
     ?>
 </body>
 
